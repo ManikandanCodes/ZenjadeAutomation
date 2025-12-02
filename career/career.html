@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers – Zenjade Automation</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="career.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+
+      <a class="brand" href="/index.html">
+        <img src="/images/logo.png" alt="Zenjade Logo" class="navbar-logo" />
+        <span>Zenjade Automation</span>
+      </a>
+
+      <div class="gstin-bar">GSTIN: 33AACCZ3045M1Z6</div>
+      <button class="mobile-nav-toggle" aria-label="Open Menu" aria-expanded="false">
+        <i class="fa fa-bars"></i>
+      </button>
+      <nav id="main-nav" class="main-nav">
+        <ul class="menu">
+          <li><a href="/index.html"><i class="fa fa-home"></i> Home</a></li>
+
+          <li class="has-dropdown">
+            <a href="#"><i class="fa fa-cubes"></i> Products <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="/Product/billing.html"><i class="fa fa-file-invoice-dollar"></i> Billing & Invoice
+                  Management</a></li>
+              <li><a href="/Product/hrpayroll.html"><i class="fa fa-users"></i> HR & Payroll Automation</a></li>
+              <li><a href="/Product/cloud.html"><i class="fa fa-cloud"></i> Cloud Inventory Management</a></li>
+              <li><a href="/Product/crm.html"><i class="fa fa-chart-line"></i> CRM Platform</a></li>
+              <li><a href="/Product/ecommerce.html"><i class="fa fa-shopping-cart"></i> E-Commerce Suite</a></li>
+              <li><a href="/Product/erp.html"><i class="fa fa-server"></i> ERP Management</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#"><i class="fa fa-briefcase"></i> Services <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="/Service/softwaredevelopment.html"><i class="fa fa-code"></i> Custom Software Development</a>
+              </li>
+              <li><a href="/Service/mobile.html"><i class="fa fa-mobile-alt"></i> Mobile App Development</a></li>
+              <li><a href="/Service/web.html"><i class="fa fa-globe"></i> Web Application Development</a></li>
+              <li><a href="/Service/devops.html"><i class="fa fa-cloud-upload-alt"></i> Cloud & DevOps Support</a></li>
+              <li><a href="/Service/automation.html"><i class="fa fa-robot"></i> AI/Automation Solutions</a></li>
+              <li><a href="/Service/digital.html"><i class="fa fa-chart-pie"></i> Digital Marketing</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/career/career.html"><i class="fa fa-user-tie"></i> Careers</a></li>
+          <li><a href="/contact/contact.html"><i class="fa fa-envelope"></i> Contact Us</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <div class="container">
+
+    <div class="career-header">
+      <h1>GET AN OPPORTUNITY!</h1>
+      <p>We are always looking for new talent. Fill the form and join our team!</p>
+    </div>
+
+    <form class="career-form" id="careerForm">
+
+      <div class="row">
+        <div class="field">
+          <label>Your Name *</label>
+          <input type="text" required />
+        </div>
+
+        <div class="field">
+          <label>Email Address</label>
+          <input type="email" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>Phone Number *</label>
+          <input type="text" required />
+        </div>
+
+        <div class="field">
+          <label>Position *</label>
+          <select required>
+            <option value="General Manager">General Manager</option>
+            <option value="Project Development Manager">Project Development Manager</option>
+            <option value="Business Development Manager">Business Development Manager</option>
+            <option value="Marketing Executive">Marketing Executive</option>
+            <option value="Hr Executive">HR Executive</option>
+            <option value="Project Engineer">Project Engineer</option>
+            <option value="Software Developer">Software Developer</option>
+            <option value="Software Testing">Software Testing</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Automation Engineer">Automation Engineer</option>
+            <option value="Design Engineer">Design Engineer</option>
+            <option value="Electrical Panel Wiring Engineer">
+              Electrical Panel Wiring Engineer
+            </option>
+            <option value="Java Developer">Java Developer</option>
+            <option value="Python Developer">Python Developer</option>
+            <option value="Admin">Admin</option>
+            <option value="Accounts Officer">Accounts Officer</option>
+            <option value="Data Entry">Data Entry</option>
+            <option value="Sales Executive">Sales Executive</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="field">
+        <label>Resume *</label>
+
+        <div class="upload-box">
+          <i class="fa fa-upload upload-icon"></i>
+          <p>Drag & Drop or Click to Upload</p>
+          <input type="file" accept=".pdf,.doc,.docx" required />
+        </div>
+
+        <p class="note">Maximum file size 10MB. Allowed: PDF, DOC, DOCX</p>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+
+    </form>
+  </div>
+
+  <div class="popup" id="successPopup">
+    <div class="popup-content">
+      <h2>Submitted Successfully!</h2>
+      <p>Your application has been received.</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-wrapper">
+
+      <div class="footer-col about-footer">
+        <img src="/images/logo.png" alt="Zenjade Logo" class="footer-logo" />
+
+        <p>
+          Zenjade Automation Technology Private Limited! We are an Industrial company
+          established in 2014, specialized in Industrial automation and Software projects.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/index.html"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="career.html"><i class="fa fa-user-tie"></i> Careers</a></li>
+          <li><a href="/contact/contact.html"><i class="fa fa-envelope"></i> Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Location</h4>
+
+        <p><i class="fa fa-phone"></i> +91 97899 74984</p>
+
+        <p><i class="fa fa-envelope"></i> info@zenjadeautomation.com</p>
+        <p><i class="fa fa-envelope"></i> zenjadeautomation@gmail.com</p>
+
+        <p>
+          <i class="fa fa-map-marker-alt"></i>
+          No.22, 2nd Floor, 7th Street, Balaji Nagar, Nanganallur,<br />
+          Chennai, Tamil Nadu, India - 600061
+        </p>
+      </div>
+
+      <div class="footer-col footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62207.72675946001!2d80.191374!3d12.972944!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de8b75deb4f%3A0xdfbe513f56294062!2sZenjade%20Automation%20Technology%20Private%20Limited!5e0!3m2!1sen!2sin!4v1764047296270!5m2!1sen!2sin"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+
+
+    <div class="footer-social">
+      <a href="https://www.facebook.com/people/Zenjade-Automation/61553722506976/" target="_blank"
+        rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/zenjadeautomationtechnology/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/zenjade-automation-technology-1347632a1/" target="_blank"
+        rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.youtube.com/@ZENJADEAUTOMATIONTECHNOLOGY" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+
+    <script src="career.js"></script>
+
+</body>
+
+</html>

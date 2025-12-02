@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Zenjade Automation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+ <header class="navbar">
+    <div class="container navbar-inner">
+
+      <a class="brand" href="/index.html">
+        <img src="/images/logo.png" alt="Zenjade Logo" class="navbar-logo" />
+        <span>Zenjade Automation</span>
+      </a>
+
+      <div class="gstin-bar">GSTIN: 33AACCZ3045M1Z6</div>
+      <button class="mobile-nav-toggle" aria-label="Open Menu" aria-expanded="false">
+        <i class="fa fa-bars"></i>
+      </button>
+      <nav id="main-nav" class="main-nav">
+        <ul class="menu">
+          <li><a href="/index.html"><i class="fa fa-home"></i> Home</a></li>
+
+          <li class="has-dropdown">
+            <a href="#"><i class="fa fa-cubes"></i> Products <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="/Product/billing.html"><i class="fa fa-file-invoice-dollar"></i> Billing & Invoice
+                  Management</a></li>
+              <li><a href="/Product/hrpayroll.html"><i class="fa fa-users"></i> HR & Payroll Automation</a></li>
+              <li><a href="/Product/cloud.html"><i class="fa fa-cloud"></i> Cloud Inventory Management</a></li>
+              <li><a href="/Product/crm.html"><i class="fa fa-chart-line"></i> CRM Platform</a></li>
+              <li><a href="/Product/ecommerce.html"><i class="fa fa-shopping-cart"></i> E-Commerce Suite</a></li>
+              <li><a href="/Product/erp.html"><i class="fa fa-server"></i> ERP Management</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="#"><i class="fa fa-briefcase"></i> Services <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="/Service/softwaredevelopment.html"><i class="fa fa-code"></i> Custom Software Development</a>
+              </li>
+              <li><a href="/Service/mobile.html"><i class="fa fa-mobile-alt"></i> Mobile App Development</a></li>
+              <li><a href="/Service/web.html"><i class="fa fa-globe"></i> Web Application Development</a></li>
+              <li><a href="/Service/devops.html"><i class="fa fa-cloud-upload-alt"></i> Cloud & DevOps Support</a></li>
+              <li><a href="/Service/automation.html"><i class="fa fa-robot"></i> AI/Automation Solutions</a></li>
+              <li><a href="/Service/digital.html"><i class="fa fa-chart-pie"></i> Digital Marketing</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/career/career.html"><i class="fa fa-user-tie"></i> Careers</a></li>
+          <li><a href="/contact/contact.html"><i class="fa fa-envelope"></i> Contact Us</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+<section class="contact-top container">
+    <h1>Contact Us</h1>
+    <p>We’re here to assist you — reach out anytime!</p>
+</section>
+
+<section class="contact-details container">
+
+    <div class="detail-box">
+        <i class="fa fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+91 97899 74984</p>
+    </div>
+
+    <div class="detail-box">
+        <i class="fa fa-envelope"></i>
+        <h3>Email</h3>
+        <p>info@zenjadeautomation.com</p>
+        <p>zenjadeautomation@gmail.com</p>
+    </div>
+
+    <div class="detail-box">
+        <i class="fa fa-location-dot"></i>
+        <h3>Address</h3>
+        <p>No.22, 2nd Floor, 7th Street, Balaji Nagar,<br>Nanganallur, Chennai – 600061</p>
+    </div>
+
+</section>
+
+<section class="map-section container">
+    <h2>Find Us on Map</h2>
+
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.5580692436957!2d80.191374!3d12.972944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de8b75deb4f%3A0xdfbe513f56294062!2sZenjade%20Automation%20Technology%20Private%20Limited!5e0!3m2!1sen!2sin!4v1700000000000"
+        loading="lazy"
+        allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+
+
+
+<section class="form-section container">
+
+    <h2>Send Us an Enquiry</h2>
+
+    <form id="contactForm" class="contact-form">
+
+        <div class="row">
+            <div class="field">
+                <label>Your Name *</label>
+                <input type="text" required>
+            </div>
+
+            <div class="field">
+                <label>Email *</label>
+                <input type="email" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="field">
+                <label>Phone Number *</label>
+                <input type="text" required>
+            </div>
+        </div>
+
+        <div class="field">
+            <label>Message *</label>
+            <textarea required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+
+    </form>
+
+</section>
+
+
+<div class="popup" id="successPopup">
+    <div class="popup-content">
+        <h2>Submitted Successfully!</h2>
+        <p>We will contact you soon.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<script src="contact.js"></script>
+
+</body>
+</html>
