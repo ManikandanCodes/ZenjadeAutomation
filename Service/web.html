@@ -54,7 +54,7 @@
     }
 
     .navbar-logo {
-      height: 48px;
+      height: 60px;
       margin-right: 2px;
     }
 
@@ -335,7 +335,7 @@
       cursor: pointer;
     }
 
-   
+
     @media (max-width: 900px) {
 
       .container {
@@ -392,7 +392,7 @@
         padding: 10px 16px;
       }
 
-   
+
       .dropdown {
         display: none;
         position: static;
@@ -467,6 +467,7 @@
 
 </head>
 <!-- HTML -->
+
 <body>
 
   <header class="navbar">
@@ -474,13 +475,8 @@
 
       <a class="brand" href="/index.html">
         <img src="/images/logo.png" alt="Zenjade Logo" class="navbar-logo" />
-        <span>Zenjade Automation</span>
       </a>
 
-      <div class="gstin-bar">GSTIN: 33AACCZ3045M1Z6</div>
-      <button class="mobile-nav-toggle" aria-label="Open Menu" aria-expanded="false">
-        <i class="fa fa-bars"></i>
-      </button>
       <nav id="main-nav" class="main-nav">
         <ul class="menu">
           <li><a href="/index.html"><i class="fa fa-home"></i> Home</a></li>
@@ -516,8 +512,15 @@
         </ul>
       </nav>
 
+      <div class="gstin-bar">GSTIN: 33AACCZ3045M1Z6</div>
+
+      <button class="mobile-nav-toggle" aria-label="Open Menu" aria-expanded="false">
+        <i class="fa fa-bars"></i>
+      </button>
+
     </div>
   </header>
+
 
   <div class="container">
 
@@ -652,11 +655,11 @@
           if (!link) return;
 
           link.addEventListener("click", (e) => {
-            if (window.innerWidth > 900) return; 
+            if (window.innerWidth > 900) return;
 
             e.preventDefault();
 
-        
+
             dropdownParents.forEach(p => {
               if (p !== parent) p.classList.remove("open");
             });

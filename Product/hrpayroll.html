@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HR & Payroll Automation – Zenjade Automation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-<!-- CSS -->
+    <!-- CSS -->
     <style>
         body {
             font-family: "Segoe UI", sans-serif;
@@ -53,7 +53,7 @@
         }
 
         .navbar-logo {
-            height: 48px;
+            height: 60px;
             margin-right: 2px;
         }
 
@@ -339,15 +339,18 @@
             .brand {
                 flex: 0 1 auto;
             }
+
             .gstin-bar {
                 order: 2;
                 margin-left: auto;
             }
+
             .mobile-nav-toggle {
                 display: block;
                 order: 3;
                 margin-left: 10px;
             }
+
             .main-nav {
                 display: none;
                 width: 100%;
@@ -358,6 +361,7 @@
                 flex-direction: column;
                 order: 4;
             }
+
             .main-nav.open {
                 display: block;
             }
@@ -449,6 +453,7 @@
     </style>
 </head>
 <!-- HTML -->
+
 <body>
 
     <header class="navbar">
@@ -456,13 +461,8 @@
 
             <a class="brand" href="/index.html">
                 <img src="/images/logo.png" alt="Zenjade Logo" class="navbar-logo" />
-                <span>Zenjade Automation</span>
             </a>
 
-            <div class="gstin-bar">GSTIN: 33AACCZ3045M1Z6</div>
-            <button class="mobile-nav-toggle" aria-label="Open Menu" aria-expanded="false">
-                <i class="fa fa-bars"></i>
-            </button>
             <nav id="main-nav" class="main-nav">
                 <ul class="menu">
                     <li><a href="/index.html"><i class="fa fa-home"></i> Home</a></li>
@@ -471,8 +471,7 @@
                         <a href="#"><i class="fa fa-cubes"></i> Products <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown">
                             <li><a href="/Product/billing.html"><i class="fa fa-file-invoice-dollar"></i> Billing &
-                                    Invoice
-                                    Management</a></li>
+                                    Invoice Management</a></li>
                             <li><a href="/Product/hrpayroll.html"><i class="fa fa-users"></i> HR & Payroll
                                     Automation</a></li>
                             <li><a href="/Product/cloud.html"><i class="fa fa-cloud"></i> Cloud Inventory Management</a>
@@ -488,8 +487,7 @@
                         <a href="#"><i class="fa fa-briefcase"></i> Services <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown">
                             <li><a href="/Service/softwaredevelopment.html"><i class="fa fa-code"></i> Custom Software
-                                    Development</a>
-                            </li>
+                                    Development</a></li>
                             <li><a href="/Service/mobile.html"><i class="fa fa-mobile-alt"></i> Mobile App
                                     Development</a></li>
                             <li><a href="/Service/web.html"><i class="fa fa-globe"></i> Web Application Development</a>
@@ -508,8 +506,15 @@
                 </ul>
             </nav>
 
+            <div class="gstin-bar">GSTIN: 33AACCZ3045M1Z6</div>
+
+            <button class="mobile-nav-toggle" aria-label="Open Menu" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </button>
+
         </div>
     </header>
+
 
     <div class="container">
         <section class="product-hero">
@@ -599,7 +604,7 @@
         </div>
     </div>
 
-         <!-- JAVASCRIPT -->
+    <!-- JAVASCRIPT -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const demoForm = document.getElementById("demoForm");
@@ -637,7 +642,7 @@
                     if (!link) return;
 
                     link.addEventListener("click", (e) => {
-                        if (window.innerWidth > 900) return; 
+                        if (window.innerWidth > 900) return;
 
                         e.preventDefault();
 
